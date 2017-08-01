@@ -37,10 +37,10 @@ TelescopeServerRTS2_CPP = Connection.cpp Listener.cpp Socket.cpp \
 TelescopeServerRTS2_O = $(TelescopeServerRTS2_CPP:.cpp=.o)
 TelescopeServerRTS2_OBJ = $(TelescopeServerRTS2_CPP:.cpp=.obj)
 
-CCFLAGS = -O4 -Wall -Wextra -Wno-unused-parameter -Werror -DDEBUG3 -DDEBUG4 -DDEBUG5
-LDFLAGS = -O4 -s
+CCFLAGS = -O3 -Wall -Wextra -Wno-unused-parameter -Werror -DDEBUG3 -DDEBUG4 -DDEBUG5
+LDFLAGS = -O3 -s
 
-CCFLAGS = -O4 -Wall -Wextra -Wno-unused-parameter -Werror -DDEBUG3 -DDEBUG4 -DDEBUG5
+CCFLAGS = -O3 -Wall -Wextra -Wno-unused-parameter -Werror -DDEBUG3 -DDEBUG4 -DDEBUG5
 
 ifneq ($(XMLRPCPP),)
   CCFLAGS += -I$(XMLRPCPP) -lrts2xmlrpc++
